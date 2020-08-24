@@ -6,6 +6,7 @@
     <div class="text-center">
         
     <table class="table">
+
         <thead class="thead-dark">
             <tr>
                 <th scope="col">Imagen</th>
@@ -26,7 +27,6 @@
                     <a class="btn btn-primary" href={{route('curso.show',$dato->IdCurso)}}>Ver</a>
                     <a class="btn btn-primary" href={{route('recursos.show',$dato->IdCurso)}}>Ver recursos</a>
                     <a class="btn btn-primary" href={{route('certificado.pdf',$dato->IdCurso)}}>descargar Certificado </a>
-                    <h1>prueba</h1>
                     
                    
                    

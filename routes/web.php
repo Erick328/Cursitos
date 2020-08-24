@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 //pdf
 
-Route::get('certificado-pdf/{id}','AlumnoController@certificado')->name('certificado.pdf');
+Route::get('certificado-pdf','AlumnoController@certificado')->name('certificado.pdf');
 //bitacora
 
 route::get('Bitacora',['as'

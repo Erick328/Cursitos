@@ -7,7 +7,12 @@
     <title></title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Le damos este certificado por terminar el curso</h1>
+    <hr>
+    <h2>Con una muestra de agradecimiento por utilizar nuestros cervicios</h2>
+    <hr>
+    <h3>atte: Cursitos(Erick Edwing Vidal Cespedes)</h3>
+    <hr>
 
 </body>
 </html>

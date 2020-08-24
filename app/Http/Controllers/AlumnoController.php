@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use Barryvdh\DomPDF\Facade as PDF;
 use App\alumno;
+use App\boletaInscripcion;
 use App\certificado;
 use App\curso;
 use App\User;
@@ -81,10 +82,10 @@ class AlumnoController extends Controller
         return redirect()->route('login');
     }
 
-    public function certificado($id){
-        $certificado=curso::findOrFail($id);
+    public function certificado(){
+        $certificado=DB::table('boleta_inscripcion')->join('alumno','alumno.CI','=','CIAlumno');
         $pdf= PDF::loadView('alumno.certificado',compact('certificado'));
-        return $pdf->stream('certificado-pdf',$id);
+        return $pdf->stream('certificado-pdf');
     }
 
     public function show()
